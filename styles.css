@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Na pseudoclasse root, pode-se criar variáveis e aplicá-las ao longo do código. 
+No exemplo abaixo, todos os elementos que tiverem um atributo var(--background) terão essa característica.
+--variable: xxx é a maneira como se declara uma variável em CSS
+Útil para quando precisa mudar vários elementos com uma característica em comum */
+/* align-items: eixo y, justify-content: eixo x */
+
+:root {
+    --background: blue;
+}
+
+.tweet-container {
+    width: 100%;
+    max-height: 161px;
+    max-width: 596px;
+    margin: auto;
+    margin-top: 97px;
+    margin-bottom: 97px;
+    border: 1px solid #DADDDF;
+    display: flex;
+}
+
+.logo-nike {
+    width: 100%;
+    max-width: 48px;
+    margin-top: 17px;
+    margin-left: 17px;
+    margin-bottom: 96px;
+}
+
+.tweet {
+    display: flex;
+    flex-direction: column;
+    margin: 17px 84px 17px 12px;
+}
+
+.tweet-profile {
+    color: #536471;
+    font-weight: 400;
+    display: inline-block;
+}
+
+.tweet-content {
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 5px;
+    width: 100%;
+    max-width: 430px;
+    color: #0F1419;
+    display: inline-flex;
+    flex-direction: column;
+}
+
+.tweet-actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.tweet-action {
+    display: flex;
+    align-items: center;
+}
+
+.action-text {
+    color: #536471;
+    font-size: 13px;
+    font-weight: 400;
+    margin-left: 17px;
+}
+
+.profile-name {
+    font-weight: 700;
+    color: #0F1419;
+}
+
+.verified-icon {
+    width: 15px;
+    margin-right: 6px;
+}
+
+.dot {
+    width: 3px;
+    display: inline-block;
+    margin-bottom: 3px;
+}
+
+.space {
+    margin-bottom: 15px;
+}
